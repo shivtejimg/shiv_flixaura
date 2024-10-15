@@ -1,0 +1,596 @@
+.newHeroSection {
+    $text-color: #737478 !important;
+    $theme-orange: #F36A22 !important;
+    $theme-blue: #0B9FDB !important;
+    background: rgb(1,16,35);
+    background: radial-gradient(circle, rgba(1,16,35,0.9192927170868347) 10%, rgba(1,16,35,1) 90%);
+    background: radial-gradient(circle, rgba(1,16,35,0.8576680672268908) 0%, rgba(1,16,35,1) 100%) ;
+    // background: linear-gradient(rgba(#011023, 0.8), rgba(#011023, 0.8)), url(../../../img/herobg.png) no-repeat center;
+    // background-size: contain;
+    // filter: invert(1) brightness(0.1);
+    &.indexHeroSection{
+        position: relative;
+        &::before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            background:  url(../../../img/herobg141.png) no-repeat center;
+            background-size: 90%;
+            // filter: invert(1) opacity(0.1);
+            filter: opacity(0.1);
+            // mix-blend-mode: color-dodge;
+        }
+    }
+    & .textWrapper {
+        max-width: min-content;
+        padding-top: 4.5rem;
+        & .introText {
+            color: $text-color;
+            letter-spacing: 1px;
+            &.indexontrotext{
+                color: $white !important;
+            }
+        }
+        & .coloredLine {
+            & span {
+                background-color: $theme-orange;
+            }
+        }
+        & .flixText {
+            font-size: 130px;
+            line-height: 100%;
+            color: $theme-blue;
+            & span {
+                color: $theme-orange;
+            }
+        }
+        & .descText {
+            color: $theme-orange;
+            letter-spacing: 1px;
+            line-height: 100%;
+        }
+    }
+    & .socialIcons {
+        transition: all 0.4s;
+        z-index: 9;
+        & ul {
+        & li {
+            list-style: none;
+            & a {
+            text-decoration: none;
+            margin: 5px 5px;
+            background: #011023;
+            border-radius: 50px;
+            width: 35px;
+            height: 35px;
+            transition: 0.8s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            & i {
+                color: white;
+                font-size: 15px;
+            }
+            }
+        }
+        }
+        & .hovers-facebook:hover {
+            background-color: #3b5998;
+        }
+        & .hovers-youtube:hover {
+            background-color: #c5322d;
+        }
+        & .hovers-twitter:hover {
+            background-color: #00acee;
+        }
+        & .hovers-linkedin:hover {
+            background-color: #3b5998;
+        }
+        & .hovers-instagram:hover {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+        }
+    }
+    & .numberText {
+        color: $text-color;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transform: translateX(-50%);
+    }
+    & .scrollText {
+        writing-mode: vertical-lr;
+        color: $text-color;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        right: 0;
+        & .bottomLine {
+            width: 2px;
+            height: 40px;
+            background: $text-color;
+        }
+        & img {
+            filter: brightness(0.5);
+        }
+    }
+    &.blognewSection{
+        background: none !important;
+    }
+    &.innerpageHeadign {
+        background: #011023;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin newHeroSection-mixin-min-sm() {
+    .newHeroSection {
+        & .textWrapper {
+            & .introText {
+            }
+            & .coloredLine {
+                & span {
+                }
+            }
+            & .flixText {
+            }
+            & .descText {
+            }
+        }
+        & .socialIcons {
+            & ul {
+            & li {
+                & a {
+                & i {
+                }
+                }
+            }
+            }
+        }
+        & .numberText {
+        }
+        & .scrollText {
+            & span {
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin newHeroSection-mixin-min-md() {
+    .newHeroSection {
+        & .textWrapper {
+            & .introText {
+            }
+            & .coloredLine {
+                & span {
+                }
+            }
+            & .flixText {
+            }
+            & .descText {
+            }
+        }
+        & .socialIcons {
+            & ul {
+            & li {
+                & a {
+                & i {
+                }
+                }
+            }
+            }
+        }
+        & .numberText {
+        }
+        & .scrollText {
+            & span {
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin newHeroSection-mixin-min-lg() {
+    .newHeroSection {
+        & .textWrapper {
+            & .introText {
+            }
+            & .coloredLine {
+                & span {
+                }
+            }
+            & .flixText {
+            }
+            & .descText {
+            }
+        }
+        & .socialIcons {
+            & ul {
+            & li {
+                & a {
+                & i {
+                }
+                }
+            }
+            }
+        }
+        & .numberText {
+        }
+        & .scrollText {
+            & span {
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin newHeroSection-mixin-min-xl() {
+    .newHeroSection {
+        & .textWrapper {
+            & .introText {
+            }
+            & .coloredLine {
+                & span {
+                }
+            }
+            & .flixText {
+            }
+            & .descText {
+            }
+        }
+        & .socialIcons {
+            & ul {
+            & li {
+                & a {
+                & i {
+                }
+                }
+            }
+            }
+        }
+        & .numberText {
+        }
+        & .scrollText {
+            & span {
+            }
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin newHeroSection-mixin-min-xxl() {
+    .newHeroSection {
+        & .textWrapper {
+            & .introText {
+            }
+            & .coloredLine {
+                & span {
+                }
+            }
+            & .flixText {
+            }
+            & .descText {
+            }
+        }
+        & .socialIcons {
+            & ul {
+            & li {
+                & a {
+                & i {
+                }
+                }
+            }
+            }
+        }
+        & .numberText {
+        }
+        & .scrollText {
+            & span {
+            }
+        }
+    }
+}
+
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin newHeroSection-mixin-max-xs() {
+    .newHeroSection {
+        &.indexHeroSection{
+            &::before{
+                // background:  url(../../../img/herobgMobile2.png) no-repeat center;
+                background-size: 95%;
+            }
+        }
+        & .textWrapper {
+            & .introText {
+            }
+            & .coloredLine {
+                & span {
+                }
+            }
+            & .flixText {
+                font-size: 60px;
+            }
+            & .descText {
+            }
+        }
+        & .socialIcons {
+            & ul {
+            & li {
+                & a {
+                & i {
+                }
+                }
+            }
+            }
+        }
+        & .numberText {
+        }
+        & .scrollText {
+            & span {
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin newHeroSection-mixin-max-sm() {
+    .newHeroSection {
+        &.indexHeroSection{
+            &::before{
+                // background:  url(../../../img/herobgMobile1.png) no-repeat center;
+                background-size: 90%;
+            }
+        }
+        & .textWrapper {
+            & .introText {
+            }
+            & .coloredLine {
+                & span {
+                }
+            }
+            & .flixText {
+                font-size: 80px;
+            }
+            & .descText {
+            }
+        }
+        & .socialIcons {
+            & ul {
+            & li {
+                & a {
+                & i {
+                }
+                }
+            }
+            }
+        }
+        & .numberText {
+        }
+        & .scrollText {
+            & span {
+            }
+        }
+    }
+
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin newHeroSection-mixin-max-md() {
+    .newHeroSection {
+        &.indexHeroSection{
+            &::before{
+                background:  url(../../../img/herobgMobile111.png) no-repeat center;
+                background-size: 72%;
+            }
+        }
+        & .textWrapper {
+            & .introText {
+            }
+            & .coloredLine {
+                & span {
+                }
+            }
+            & .flixText {
+                font-size: 100px;
+            }
+            & .descText {
+            }
+        }
+        & .socialIcons {
+            & ul {
+            & li {
+                & a {
+                & i {
+                }
+                }
+            }
+            }
+        }
+        & .numberText {
+        }
+        & .scrollText {
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            writing-mode: unset;
+            & span {
+            }
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin newHeroSection-mixin-max-lg() {
+    .newHeroSection {
+        & .textWrapper {
+            padding-top: 3rem !important;
+            & .introText {
+            }
+            & .coloredLine {
+                & span {
+                }
+            }
+            & .flixText {
+                font-size: 110px;
+            }
+            & .descText {
+            }
+        }
+        & .socialIcons {
+            & ul {
+            & li {
+                & a {
+                & i {
+                }
+                }
+            }
+            }
+        }
+        & .numberText {
+        }
+        & .scrollText {
+            & span {
+            }
+        }
+    }
+
+}
+
+// Large devices (desktops, less than 1300px)
+@mixin newHeroSection-mixin-max-1300() {
+    .newHeroSection {
+        & .textWrapper {
+            & .introText {
+            }
+            & .coloredLine {
+                & span {
+                }
+            }
+            & .flixText {
+            }
+            & .descText {
+            }
+        }
+        & .socialIcons {
+            & ul {
+            & li {
+                & a {
+                & i {
+                }
+                }
+            }
+            }
+        }
+        & .numberText {
+        }
+        & .scrollText {
+            & span {
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin newHeroSection-mixin-max-xl() {
+    .newHeroSection {
+        & .textWrapper {
+            & .introText {
+            }
+            & .coloredLine {
+                & span {
+                }
+            }
+            & .flixText {
+            }
+            & .descText {
+            }
+        }
+        & .socialIcons {
+            & ul {
+            & li {
+                & a {
+                & i {
+                }
+                }
+            }
+            }
+        }
+        & .numberText {
+        }
+        & .scrollText {
+            & span {
+            }
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    @include newHeroSection-mixin-min-sm();
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    @include newHeroSection-mixin-min-md();
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    @include newHeroSection-mixin-min-lg();
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    @include newHeroSection-mixin-min-xl();
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    @include newHeroSection-mixin-min-xxl();
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+    @include newHeroSection-mixin-max-xl();
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    @include newHeroSection-mixin-max-lg();
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    @include newHeroSection-mixin-max-md();
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    @include newHeroSection-mixin-max-sm();
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    @include newHeroSection-mixin-max-xs();
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .newHeroSection {
+        &.indexHeroSection{
+            &::before{
+                background:  url(../../../img/herobgMobile21.png) no-repeat center;
+                background-size: 95%;
+            }
+        }
+    }
+}

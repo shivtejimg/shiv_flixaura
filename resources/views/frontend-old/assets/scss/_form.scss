@@ -1,0 +1,200 @@
+%tras-01 {
+  transition: 0.1s all cubic-bezier(0.25, 0.1, 0, 1.7);
+}
+%tras-02 {
+  transition: 0.2s all cubic-bezier(0.25, 0.1, 0, 1.7);
+}
+%tras-03 {
+  transition: 0.3s all cubic-bezier(0.25, 0.1, 0, 1.7);
+}
+%tras-04 {
+  transition: 0.4s all cubic-bezier(0.25, 0.1, 0, 1.7);
+}
+%tras-05 {
+  transition: 0.5s all cubic-bezier(0.25, 0.1, 0, 1.7);
+}
+%tras-06 {
+  transition: 0.6s all cubic-bezier(0.25, 0.1, 0, 1.7);
+}
+%tras-07 {
+  transition: 0.7s all cubic-bezier(0.25, 0.1, 0, 1.7);
+}
+%tras-08 {
+  transition: 0.8s all cubic-bezier(0.25, 0.1, 0, 1.7);
+}
+%tras-09 {
+  transition: 0.9s all cubic-bezier(0.25, 0.1, 0, 1.7);
+}
+%tras-1 {
+  transition: 1s all cubic-bezier(0.25, 0.1, 0, 1.7);
+}
+%tras-15 {
+  transition: 1.5s all cubic-bezier(0.25, 0.1, 0, 1.7);
+}
+%tras-2 {
+  transition: 2s all cubic-bezier(0.25, 0.1, 0, 1.7);
+}
+
+::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgba($black, 0);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgba($black, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+ 
+// @font-face {
+//   font-family: 'Tiempos Headline';
+//   src: url('../../../fonts/5ca96190d636b7564a5cc13c_Tiempos%20Headline%20Bold.otf') format('opentype');
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: auto;
+//   }
+//   @font-face {
+//   font-family: 'Tiempos Headline';
+//   src: url('../../../fonts/5d242368aab4a5cfacdd9127_TiemposHeadline-Light.otf') format('opentype');
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: auto;
+//   }
+//   @font-face {
+//     font-family: Objectivity;
+//     font-weight: 400;
+//     src: url(../../../fonts/Objectivity-Regular.woff) format("woff"), url(../../../fonts/Objectivity-Regular.woff2) format("woff2"),
+//         url(../../../fonts/Objectivity-Regular.otf) format("opentype");
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: Objectivity;
+//     font-weight: 500;
+//     src: url(../../../fonts/Objectivity-Medium.woff) format("woff"), url(../../../fonts/Objectivity-Medium.woff2) format("woff2"),
+//         url(../../../fonts/Objectivity-Medium.otf) format("opentype");
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: Objectivity;
+//     font-weight: 700;
+//     src: url(../../../fonts/Objectivity-Bold.woff) format("woff"), url(../../../fonts/Objectivity-Bold.woff2) format("woff2"), url(../../../fonts/Objectivity-Bold.otf) format("opentype");
+//     font-display: swap;
+// }
+
+.form-container{
+  background: linear-gradient(150deg,#1B394D 33%,#2D9DA7 34%,#2D9DA7 66%,#EC5F20 67%); 
+  text-align: center;
+  padding: 30px 20px 50px;
+}
+.form-bg{
+      height: 100vh;
+    align-items: center;
+    display: flex;
+    position:relative;
+    &:before{
+      content: "";
+    background: linear-gradient(
+45deg
+, #f26925, #149fda);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    mix-blend-mode: color;
+    z-index: 0;
+    }
+}
+.form-container .title{
+  color: #fff;
+  font-size: 23px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 0 0 60px;
+}
+.form-container .form-horizontal{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+.form-horizontal .form-icon{
+  color: #fff;
+  background-color: #1B394D;
+  font-size: 75px;
+  line-height: 92px;
+  height: 90px;
+  width: 90px;
+  margin: -65px auto 10px;
+  border-radius: 50%;
+}
+.form-horizontal .form-group{
+  margin: 0 0 10px;
+  position: relative;
+}
+.form-horizontal .form-group:nth-child(3){
+   margin-bottom: 30px;
+}
+.form-horizontal .form-group .input-icon {
+    color: #9f7a65;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    margin-left: 15px;
+}
+.form-horizontal .form-control{
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  padding: 10px 10px 10px 40px;
+  margin: 0 0 5px;
+  border: none;
+  border-bottom: 2px solid #e7e7e7;
+  border-radius: 0px;
+  box-shadow: none;
+}
+.form-horizontal .form-control:focus{
+  box-shadow: none;
+  border-bottom-color: #EC5F20;
+}
+.form-horizontal .form-control::placeholder{
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.form-horizontal .forgot{
+  font-size: 13px;
+  font-weight: 600;
+  text-align: right;
+  display: block;
+}
+.form-horizontal .forgot a{
+  color: #777;
+  transition: all 0.3s ease 0s;
+}
+.form-horizontal .forgot a:hover{
+  color: #777;
+  text-decoration:  underline;
+}
+.form-horizontal .signin{
+  color: #fff;
+  background-color: #EC5F20;
+  font-size: 17px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  width: 100%;
+  padding: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: all 0.4s ease 0s;
+}
+.form-horizontal .signin:hover,
+.form-horizontal .signin:focus{
+  font-weight: 600;
+  letter-spacing: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3) inset;
+}

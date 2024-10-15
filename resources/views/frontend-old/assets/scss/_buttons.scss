@@ -1,0 +1,50 @@
+.bookBtn {
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease-in-out .5s;
+    // top: calc(50vh - 54px - 74px);
+    right: 0px;
+    // margin-right: -18px;
+    // transform: translatey(156%);
+    top: 50%;
+    transform: translateY(-50%);
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: end;
+    &.fixedBtn{
+        visibility: visible;
+        opacity: 1;
+    }
+    & .comman_button {
+        // background-color: rgba($gray-500 , 0.7);
+        // background: rgb(9,22,92);
+        // background: linear-gradient(90deg, rgba(9,22,92,1) 0%, rgba(101,191,219,1) 83%);
+        background: rgb(243,106,34);
+        background: linear-gradient(90deg, rgba(243,106,34,1) 0%, rgba(11,159,219,1) 90%);
+        backdrop-filter: blur(30px);
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        & img {
+            filter: invert(1);
+            transition: all ease-in-out 0.3s;
+        }
+        &:hover{
+            transform: unset;
+            & img {
+                transform: translateX(5px);
+            }
+        }
+    }
+}
+
+.bookingBtn {
+    & .comman_button {
+        background: #ffb600 !important;
+    }
+}
+.viewBtn {
+    & .comman_button{
+        background: #f36a22 !important;
+    }
+}

@@ -1,0 +1,168 @@
+@import "variables";
+
+.portfolio-categories {
+  padding: 75px 15px;
+  & > [class*="container"] {
+    // min-height: 100vh;
+    & ul#portfolioCat {
+      border: none;
+      &.nav-tabs {
+        & li.nav-item {
+          & .nav-link {
+            border: none;
+            color: $gray-600;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              inset: auto 17px -15px 17px;
+              height: 4px;
+              background: $black;
+              opacity: 0;
+              transition: 0.5s all ease-in-out;
+            }
+            &:hover {
+              &::after {
+                inset: auto 17px -3px 17px;
+                opacity: 1;
+              }
+            }
+            &.active {
+              color: $gray-900;
+              &::after {
+                inset: auto 17px -3px 17px;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+    & #portfolioCatContent {
+      & .tab-pane {
+        & .shoot {
+          & img.lazy ~ .lazy-wave {
+            animation: wave 1s infinite linear forwards;
+            background: rgba($gray-500, 0.5);
+            background: linear-gradient(to right, transparent 8%, rgba($gray-500, 0.5) 18%, transparent 33%);
+            background-size: 800px 104px;
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            backdrop-filter: blur(20px);
+          }
+        }
+        & .video_ratio {
+          position: relative;
+          padding-bottom: 56.25%; /* 16:9 */
+          height: 0;
+          & iframe,
+          & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          & span {
+            display: grid;
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: #00acbe;
+            & i {
+              &::before {
+                color: white;
+                opacity: 1;
+              }
+              &::after {
+                // opacity: 1;
+              }
+            }
+            & .waves-block {
+              position: absolute;
+              z-index: 0;
+              display: grid;
+              inset: 0;
+              margin: auto;
+              align-items: center;
+              justify-content: center;
+              width: 53px;
+              height: 53px;
+              & .waves {
+                position: absolute;
+                text-align: center;
+                width: 156px;
+                height: 154px;
+                // background: rgba($theme1, 0.3);
+                opacity: 0;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                border-radius: 100%;
+                right: -50px;
+                bottom: -50px;
+                z-index: -1;
+                -webkit-animation: waves 3s ease-in-out infinite;
+                animation: waves 3s ease-in-out infinite;
+                display: grid;
+                align-items: center;
+                justify-self: center;
+                & i {
+                  font-size: 130px;
+                  &::before,
+                  &::after {
+                    opacity: 0.5;
+                    color: $theme1;
+                  }
+                }
+                &.wave-1 {
+                  -webkit-animation-delay: 0s;
+                  animation-delay: 0s;
+                }
+                &.wave-2 {
+                  -webkit-animation-delay: 1s;
+                  animation-delay: 1s;
+                }
+                &.wave-3 {
+                  -webkit-animation-delay: 2s;
+                  animation-delay: 2s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes wave {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  50% {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}

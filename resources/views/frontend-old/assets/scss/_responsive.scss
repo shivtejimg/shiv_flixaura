@@ -1,0 +1,292 @@
+
+@media (max-width: 1279px) {
+}
+
+@media (max-width: 1199px) {
+  .hero .carousel .carousel-inner .carousel-item {
+    height: 90vh;
+  }
+  .counter .content h2 {
+    font-size: 50px !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  br {
+    display: none;
+  }
+  .brand_mens ul li a {
+    // color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+    font-weight: 600;
+    margin: 0 13px;
+  }
+  .hero {
+    padding-top: 64px;
+    min-height: auto;
+    height: auto;
+    padding: 0 0 40px;
+    text-align: center;
+  }
+  .home-slide:before {
+    right: 0;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    background-image: url(../../../img/shape4.png);
+    background-position: center;
+    height: 148px;
+    width: 100%;
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .hero .carousel .carousel-control-prev {
+    opacity: 1;
+    display: none;
+  }
+  .brand .comman_button,
+  .booking .comman_button {
+    // padding: 7px 12px !important;
+    transition: 0.8s;
+    font-size: 13px !important;
+  }
+  .comman_button {
+    // padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+  .hero .comman_button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .section-title h2 {
+    margin: 12px auto 28px !important;
+    line-height: 28px !important;
+  }
+  .howitworks .howitwork_1 .content h4 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+  .talent .section-title,
+  .counter .section-title {
+    padding-bottom: 0;
+  }
+  .counter .content h2 {
+    font-size: 40px !important;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .carousel .carousel-inner .carousel-item {
+    height: 350px;
+    background-repeat: no-repeat;
+  }
+  .hero.portfolio_categories .carousel .carousel-inner .carousel-item {
+    height: 350px;
+  }
+  .home-slide:before {
+    bottom: -9px;
+    height: 81px;
+  }
+  .offcanvas-header .btn-close {
+    opacity: 1;
+  }
+  .brand_mens ul li a {
+    padding: 13px 10px;
+    margin: 0;
+    border-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #000;
+    box-shadow: 0 0 14px #00000026;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .offcanvas-body .comman_button {
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+  .offcanvas-body .comman_button {
+    padding: 13px 16px !important;
+    font-size: 15px !important;
+    box-shadow: 0 0 14px #00000026 !important;
+  }
+  .toggle_btn {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    color: #dfdfdf !important;
+  }
+  .toggle_btn img {
+    max-width: 30px;
+    margin-right: -6px;
+    filter: brightness(0.9);
+  }
+  .hero {
+    min-height: auto;
+    height: auto;
+    padding: 50px 0 40px;
+    text-align: center;
+  }
+  .brand-name {
+    transform: scale(0.9);
+    margin-left: -16px;
+  }
+  .comman_button {
+    padding: 8px 21px !important;
+    font-size: 13px !important;
+  }
+  .section-title h2 {
+    margin: 6px auto 24px !important;
+    line-height: 26px !important;
+  }
+  .counter .counter_1 i {
+    font-size: 19px;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+  .counter .content h2 {
+    font-size: 24px !important;
+    margin: 0;
+  }
+  .counter .counter_1 h5 {
+    font-size: 13px;
+  }
+  .counter-part {
+    box-shadow: 0 0 10px #c1c1c17a;
+    padding: 13px 9px;
+    border-radius: 7px;
+  }
+  .mobile_class {
+    margin: 0;
+  }
+  // .mobile_class .links_footer {
+  //     background: #fff;
+  //     border-radius: 10px;
+  //     padding: 0 20px;
+  // }
+  .footer_1 .links_footer a {
+    margin-bottom: 11px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+  .footer_1 .copyright {
+    padding: 14px 0;
+    margin-top: 10px;
+    background-color: #141b24;
+  }
+  .links_footer {
+    text-align: center;
+  }
+  .toggle_btn:focus {
+    background-color: transparent;
+  }
+  .date_part h5 {
+    font-size: 14px;
+  }
+  .book-now .php-email-form input {
+    font-size: 13px;
+  }
+  .book-now .php-email-form i {
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 9px;
+    padding: 5px;
+    font-size: 15px;
+  }
+  .book-now .php-email-form select {
+    padding: 11px;
+    font-size: 13px;
+    background-size: 11px;
+    background-position: 94%;
+  }
+  .category {
+    & .category_sldier {
+      & .category_sldier_box {
+        height: 100px;
+        display: inline-flex;
+        width: 150px;
+        align-items: center;
+        justify-content: center; 
+        font-size: 13px;
+        & span {
+        }
+      }
+      & .owl-nav {  
+        display: none;
+      }
+      & .owl-dots{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        & button{
+          background-color: #ffffff52;
+          height: 3px;
+          width: 15px;
+          border-radius: 50px;
+          transition: 0.6s all;
+          margin: 0 3px;
+          &.active {
+            background-color: #fff;
+            width: 30px;
+          }
+        } 
+      }
+    }
+  }
+  .shoot{
+    & .photoghraphy_box{
+      & .book_now{
+        font-size: 10px;
+        margin: 0 6px 6px 0;
+        padding: 5px 8px;
+      }
+    }
+  }
+}
+@media screen and (min-device-width: 991.98px) and (max-device-width:1023px) {
+  .portfolio_categories{
+    & .home-slide {
+      &::before{
+        right: -30px !important;
+        background-size: inherit;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 991.98px) {
+  .portfolio_categories{
+    & .home-slide {
+      &::before{
+        position: absolute !important;
+        content: "" !important;
+        right: -25px;
+        top: 50% !important;
+        bottom: 0 !important;
+        // background-image: url(../../../img/shape3.png) !important;
+        background-image: url(../../../img/Subtractshap2.png) !important;
+        background-size: contain;
+        background-position: right !important;
+        height: 100% !important;
+        width: 100% !important;
+        z-index: 2 !important;
+        background-repeat: no-repeat !important;
+        // transform: rotate(-8deg);
+        transform: translateY(-50%);
+        left: unset !important;
+      }
+    }
+  }
+}
+
+

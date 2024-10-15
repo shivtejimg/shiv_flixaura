@@ -1,0 +1,118 @@
+/*---------------------------------------------------------------------
+                              footer SECTION
+  -----------------------------------------------------------------------*/
+  .links_footer h3{
+    font-family: Objectivity,Arial,Helvetica Neue,Helvetica,sans-serif;
+  }
+  .copyright-inner{
+    font-family: Objectivity,Arial,Helvetica Neue,Helvetica,sans-serif;
+  }
+.footer_1 {
+  background: #011023;
+  padding-top: 20px;
+  & .links_footer a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+    font-size: 12px;
+    transition: 0.5s;
+    font-family: Objectivity,Arial,Helvetica Neue,Helvetica,sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    padding: 0px 10px;
+    border-right: 1px solid;
+    &:hover {
+      color: #d07346;
+    }
+  }
+  & .comman_button {
+    border-color: #c1c8d4;
+    background-color: #fff;
+    color: #454f5c;
+    text-decoration: none;
+    padding: 10px 14px;
+    transition: 0.8s;
+    border-radius: 5px;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  & .copyright {
+    border-top: 1px solid white !important;
+    padding: 20px 0;
+    margin-top: 30px;
+    background-color: #141b24;
+  }
+}
+.social-icons {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  transition: all 0.4s;
+  z-index: 9;
+  & ul {
+    display: flex;
+    margin: 0;
+    & li {
+      list-style: none;
+      & a {
+        text-decoration: none;
+        margin: 5px 5px;
+        background: black;
+        border-radius: 50px;
+        width: 35px;
+        height: 35px;
+        transition: 0.8s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        & i {
+          color: white;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+social-icons.active {
+  visibility: visible;
+  opacity: 1;
+}
+.social-icons .hovers-facebook:hover {
+  background-color: #3b5998;
+}
+.social-icons .hovers-youtube:hover {
+  background-color: #c5322d;
+}
+.social-icons .hovers-twitter:hover {
+  background-color: #00acee;
+}
+.social-icons .hovers-linkedin:hover {
+  background-color: #3b5998;
+}
+.social-icons .hovers-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+
+.footer_header h2 {
+  color: #fff;
+  font-family: Objectivity,Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+// .footer_header h2::after{
+//   position: absolute;
+//   content: '';
+//   top: 12px;
+//   left: 0;
+//   background-color: #fff;
+//   height: 2px;
+//   width: calc(100% - 76px);
+// }
+.main_links {
+  margin-left: -9px;
+}
